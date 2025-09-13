@@ -1,6 +1,6 @@
 /*aim:in ATM machine
-editor:krisha mangukiya
-date:3th august,2025*/
+editor:riya kakadiya
+date:12th sapt,2025*/
 #include<stdio.h>
 #include<conio.h>
 void main()
@@ -53,3 +53,4 @@ void main()
 }while(choice!=3);
 
 }
+
