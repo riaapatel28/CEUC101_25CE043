@@ -1,6 +1,6 @@
 /*celsius to fahrenheit
-editor:krisha mangukiya
-date:25th july*/
+editor:riya kakadiya
+date:12th sapt*/
 #include<stdio.h>
 #include<conio.h>
 void main()
@@ -13,3 +13,4 @@ void main()
 	printf("%f",f);
 
 }
+
