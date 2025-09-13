@@ -1,4 +1,3 @@
-
 /*aim:process of automatic tunk
 editor:riya kakadiya
 date:12th sapt2025*/
@@ -6,7 +5,7 @@ date:12th sapt2025*/
 #include<conio.h>
 void main()
 {
-	int c;n
+	int c,n;
 	for(c=0;c<=100;c++)
 	{
 		if(c%10==0)
@@ -16,3 +15,4 @@ void main()
 	}
 	printf("\ntank is full");
 }
+
