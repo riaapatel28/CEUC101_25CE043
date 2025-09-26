@@ -2,7 +2,6 @@
 editor:riya kakadiya
 date:12th sept,2025*/
 #include<stdio.h>
-#include<conio.h>
 #include<limits.h>
 
 
@@ -17,3 +16,4 @@ void main()
 	printf("%d",&c);
 
 }
+
