@@ -3,7 +3,6 @@ editor:riya kakadiya
 date:12th sept,2025*/
 
 #include<stdio.h>
-#include<conio.h>
 void main()
 {
 	int age;
@@ -12,3 +11,4 @@ void main()
 	age>18?printf("eligible"):printf("not eligible");
 
 }
+
