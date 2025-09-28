@@ -1,19 +1,12 @@
-/*aim:explore each data types range
-editor:riya kakadiya
-date:12th sept,2025*/
 #include<stdio.h>
-#include<limits.h>
-
-
-void main()
+void main ()
 {
-	int a,b,c;
-	printf("enter a=");
-	scanf("%d",&a);
-	printf("enter b=");
-	scanf("%d",&b);
-	c=a+b;
-	printf("%d",&c);
-
+	float h,w,bmi;
+	printf("enter your hight in meter");
+	scanf("%f",&h);
+	printf("enter your weightin kilogram");
+	scanf("%f",&w);
+	bmi=w/(h*h);
+	printf("your bmi is %f",bmi);
 }
 
