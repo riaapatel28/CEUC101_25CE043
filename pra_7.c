@@ -2,7 +2,6 @@
 editor:riya kakadiya
 date:12th sept 2025*/
 #include<stdio.h>
-#include<conio.h>
 void main()
 {
 	int a;
@@ -13,3 +12,4 @@ void main()
 
 
 }
+
