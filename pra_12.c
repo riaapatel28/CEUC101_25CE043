@@ -8,7 +8,7 @@ void main()
 	int i;
 	for(i=1;i<=50;i++)
 	{
-	printf("\tbook id :%d",i);
+	printf("\nbook id :%d",i);
 		if(i%5==0)
 		{
 			printf("\nspecial edition");
@@ -18,3 +18,4 @@ void main()
 	}
 
 }
+
