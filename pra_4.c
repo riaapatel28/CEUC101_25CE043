@@ -1,21 +1,16 @@
-/*aim:explore each data types range
-editor:riya kakadiya
-date:12th sept,2025*/
-#include<stdio.h>
-#include<conio.h>
-#include<limits.h>
-
-
+/* program : show them the magic of data type and their ranges
+programmer : riya kakadiya
+*/
+#include <stdio.h>
 void main()
 {
-	int a,b,c;
-	clrscr();
-	printf("enter a=");
-	scanf("%d",&a);
-	printf("enter b=");
-	scanf("%d",&b);
-	c=a+b;
-	printf("%d",&c);
-	getch();
+	int i;
+	char c;
+	float f;
+	double d;
+	printf("int size is %d",sizeof(i));
+	printf("\nchar is size of %d",sizeof(c));
+	printf("\nfloat size is %d",sizeof(f));
+	printf("\ndouble size is %d",sizeof(d));
 
 }
