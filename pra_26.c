@@ -1,57 +1,42 @@
+
 #include<stdio.h>
 #include<math.h>
-void input();
-int valid(float a,float b,float c);
-float para(float a,float b,float c);
-float area(float a,float b,float c);
-void result();
-void nottriangle(int n);
+void collectinput();
+void valid(int a, int b, int c);
+int Area(int a, int b, int c);
 int main()
 {
-    result();
+    printf("Triangle validity and Area\n");
+    collectinput();
     return 0;
-}void result()
-{
-    float a,b,c;
-    printf("enter the 3 lenght");
-    scanf("%f %f %f",&a,&b,&c);
-
-    int A = valid(a,b,c);
-    if(a<=0 || b<=0 || c<=0)
-    {
-        printf("enter positive number only!");
-    }
-    else if(A==1)
-    {
-        printf("valid triangle");
-        float p=para(a,b,c);
-        printf("parameter=%f",p);
-        float ar=area(a,b,c);
-        printf("area=%f",ar);
-    }
-    else if(A==0)
-    {
-        printf("invalid triangle");
-    }
 
 }
-float para(float a,float b,float c)
+void collectinput()
 {
-    return (a+b+c)/2;
-}
-int valid(float a,float b,float c)
-{
-    float s;
-    if((a+b)>c && (b+c)>a && (a+c)>b)
-      return 1;
+    int a,b,c;
+    int A_R;
+    printf("Enter the length of the three sides:\n");
+    scanf("%d %d %d",&a,&b,&c);
+    valid(a,b,c);
 
+}
+void valid(int a, int b, int c)
+{
+    if((a+b)>c || (b+c)>a || (a+c)>b)
+    {
+        printf("Valid Triangle!\n");
+        printf("Area of Triangle is: %d",Area(a,b,c));
+    }
     else
-        return 0;
+    {
+        printf("Invalid Triangle!");
+    }
 }
-float area(float x,float y,float z)
+int Area(int a, int b, int c)
 {
-    float s=para(x,y,z);
-    return sqrt(s*(s-x)*(s-y)*(s-z));
+    int s;
+    s=(a+b+c)/2;
+    int Area;
+    Area=sqrt(s*(s-a)*(s-b)*(s-c));
+    return Area;
 }
-
-
